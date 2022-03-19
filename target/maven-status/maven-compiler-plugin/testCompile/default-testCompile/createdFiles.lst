@@ -1,0 +1,9 @@
+autoapp/automation/pages/RegisterPage.class
+autoapp/automation/pages/MegaMenuPage.class
+autoapp/automation/stepDef/RegisterStepDef.class
+autoapp/automation/utility/Hooks.class
+autoapp/automation/utility/BrowserDriver.class
+autoapp/automation/runner/TestRunner.class
+autoapp/automation/pages/PersonalInfoPage.class
+autoapp/automation/stepDef/MegaMenuStepDef.class
+autoapp/automation/pages/BasePage.class

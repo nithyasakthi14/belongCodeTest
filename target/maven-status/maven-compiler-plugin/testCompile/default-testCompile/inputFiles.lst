@@ -1,0 +1,9 @@
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/runner/TestRunner.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/pages/BasePage.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/utility/Hooks.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/stepDef/RegisterStepDef.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/pages/RegisterPage.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/stepDef/MegaMenuStepDef.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/pages/PersonalInfoPage.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/pages/MegaMenuPage.java
+/Users/a212726642/Documents/workspace/belongCodeTest/src/test/java/autoapp/automation/utility/BrowserDriver.java

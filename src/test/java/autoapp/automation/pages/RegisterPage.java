@@ -38,6 +38,6 @@ public class RegisterPage extends BasePage{
 
     public static void invalidEmailErrorMsg() {
         driver.findElement(By.id(errorMsg_Id)).getText();
-        System.out.println("this is what locater gave ---> " + driver.findElement(By.id(errorMsg_Id)).getText());
+        System.out.println("error message captured by selenium is ---> " + driver.findElement(By.id(errorMsg_Id)).getText());
     }
 }

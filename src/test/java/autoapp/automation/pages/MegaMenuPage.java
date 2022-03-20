@@ -19,10 +19,12 @@ public class MegaMenuPage extends BasePage{
     }
 
     public static void selectDresses() {
+
         driver.findElement(By.xpath(dresses_xpath)).click();
     }
 
     public static void selectSummerDresses() {
+
         driver.findElement(By.xpath(summer_xpath)).click();
     }
 

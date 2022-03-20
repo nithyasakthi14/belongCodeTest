@@ -7,7 +7,6 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.Assert;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,6 +29,7 @@ public class RegisterStepDef {
     public void i_create_account_with_emailid(String emailId) throws Throwable {
         RegisterPage.createAccount(emailId);
         Thread.sleep(5000);
+        // I suggest we add implicit wait in page rather than Thread.sleep() in step def. Please see the implemented code in page which is commented for now.
     }
 
 
@@ -37,6 +37,13 @@ public class RegisterStepDef {
     public void i_should_be_able_to_register_with_my_below_details(DataTable dataTable) throws Throwable {
         PersonalInfoPage.enterPersonalInformation(dataTable);
         Thread.sleep(5000);
+        // I suggest we add implicit wait in page rather than than Thread.sleep() in step def. Please see the implemented code in page which is commented for now.
+    }
+
+    @Then("^I should get invalid email error message$")
+    public void iShouldGetInvalidEmailErrorMessage() {
+        RegisterPage.invalidEmailErrorMsg();
+
     }
 
     @Then("^I should be able to see error message displayed$")
@@ -48,11 +55,11 @@ public class RegisterStepDef {
         DataTable actual = DataTable.create(actualList);
         dataTable.diff(actual);
 
+        // The other way to verify error message is by
+        // 1) Creating a static method & calling WebDriver wait inside that method with wait.until(expectedConditions.visibilityOfElement).
+        //But it will only verify if the error message is displayed or not but it doesn't validate the content of the actual error message.
+        //I have written in such a way, that error message returned will be captured by selenium & verify against data table value.
+
     }
 
-    @Then("^I should get invalid email error message$")
-    public void iShouldGetInvalidEmailErrorMessage() {
-        RegisterPage.invalidEmailErrorMsg();
-
-    }
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class PersonalInfoPage extends BasePage{
 
@@ -44,5 +45,6 @@ public class PersonalInfoPage extends BasePage{
         driver.findElement(By.id(mobile_Id)).sendKeys(personalInfo.get(0).get("Mobile"));
 
         driver.findElement(By.xpath(register_xpath)).click();
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 }
